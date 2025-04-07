@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/somme/<path:valeurs>')
+@app.route('/<path:valeurs>')
 def somme(valeurs):
     liste_nombres = valeurs.split('/')
     liste_nombres = [int(n) for n in liste_nombres]
