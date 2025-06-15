@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/<path:valeurs>')
+@app.route('/<valeurs>')
 def exercice(valeurs):
     liste_nombres = valeurs.split('/')
     liste_nombres = [int(n) for n in liste_nombres]
